@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SehatPharm Pharmacy — Genuine Medicines & Fast Delivery | Lahore</title>
+<meta name="description" content="SehatPharm Pharmacy, Gulberg Lahore — genuine medicines, prescription upload, and same-day delivery across Lahore.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header"><div class="container nav-in">
+<a href="index.html" class="logo"><span class="logo-mark">&#10010;</span>Sehat<em>Pharm</em><small>PHARMACY &middot; LAHORE</small></a>
+<nav class="nav" id="nav"><a href="index.html" class="active">Home</a><a href="medicines.html" class="">Medicines</a><a href="prescription.html" class="">Prescription</a><a href="delivery.html" class="">Delivery</a><a href="about.html" class="">About</a><a href="contact.html" class="">Contact</a><a href="medicines.html" class="btn btn-sm">Order Medicines</a><button class="cart-btn" id="cartBtn" aria-label="Open cart">&#128722; Cart <span id="cartCount">0</span></button></nav>
+<button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+</div></header>
+<div class="cart-drawer" id="cartDrawer" aria-hidden="true">
+<div class="cart-head"><h3>Your Order</h3><button id="cartClose" aria-label="Close cart">&times;</button></div>
+<div id="cartItems" class="cart-items"></div>
+<div class="cart-foot"><div class="cart-total">Total: <b id="cartTotal">Rs. 0</b></div>
+<p class="muted small">Delivery fee calculated at checkout on WhatsApp. Prescription items are confirmed by our pharmacist before dispatch.</p>
+<button class="btn btn-amber wide" id="waCheckout">Order on WhatsApp &rarr;</button>
+<button class="btn btn-outline wide" id="cartClear">Clear Cart</button></div>
+</div>
+<div class="cart-scrim" id="cartScrim"></div>
+
+<section class="hero"><div class="container hero-in"><div>
+<span class="badge">&#128230; Same-day delivery across Lahore &middot; Open 7 days</span>
+<h1>Real Medicines. Honest Prices. Delivered to Your Door.</h1>
+<p class="lead">SehatPharm is your neighbourhood pharmacy in Gulberg, Lahore. Search 24 everyday medicines, upload a prescription, or order in minutes — and pay cash on delivery.</p>
+<div class="hero-actions"><a href="medicines.html" class="btn btn-amber">Browse Medicines &rarr;</a><a href="prescription.html" class="btn btn-outline">Upload Prescription</a></div>
+<div class="hero-search"><input id="heroSearch" placeholder="Search a medicine, e.g. Paracetamol, ORS, Vitamin D&hellip;"><button class="btn btn-green" id="heroSearchBtn">Search</button></div>
+</div>
+<div class="hero-visual">
+<img src="images/hero.jpg" alt="Well-stocked shelves inside SehatPharm Pharmacy in Lahore">
+<div class="chip chip-1">Cash on Delivery<small>Pay at your door</small></div>
+<div class="chip chip-2">Genuine Stock<small>Sourced from licensed distributors</small></div>
+</div></div></section>
+
+<section class="sec"><div class="container">
+<div class="sec-head reveal"><h2>Shop by category</h2><p>Everyday essentials, clearly priced in PKR.</p></div>
+<div class="grid cat-grid">
+<a class="cat-card reveal" href="medicines.html?cat=Pain%20Relief"><img src="images/vitamins.jpg" alt="Pain relief tablets and supplements"><h3>Pain Relief</h3><p>Paracetamol, ibuprofen &amp; more</p></a>
+<a class="cat-card reveal" href="medicines.html?cat=Cold%20%26%20Flu"><img src="images/firstaid.jpg" alt="First aid and cold care supplies"><h3>Cold &amp; Flu</h3><p>Cough syrups, ORS, flu care</p></a>
+<a class="cat-card reveal" href="medicines.html?cat=Vitamins"><img src="images/wellness.jpg" alt="Vitamins and wellness supplements"><h3>Vitamins</h3><p>Vitamin D, C, calcium &amp; multivitamins</p></a>
+<a class="cat-card reveal" href="medicines.html?cat=Skin%20Care"><img src="images/skincare.jpg" alt="Skin care creams and lotions"><h3>Skin Care</h3><p>Creams, lotions &amp; sun protection</p></a>
+<a class="cat-card reveal" href="medicines.html?cat=Baby%20Care"><img src="images/baby.jpg" alt="Baby care products"><h3>Baby Care</h3><p>Formula, diapers &amp; baby essentials</p></a>
+<a class="cat-card reveal" href="medicines.html?cat=First%20Aid"><img src="images/shelves.jpg" alt="Pharmacy shelves with medicines"><h3>First Aid</h3><p>Bandages, antiseptics &amp; dressings</p></a>
+</div></div></section>
+
+<section class="sec sec-alt"><div class="container two">
+<div class="reveal"><img src="images/pharmacist.jpg" alt="Pharmacist at SehatPharm checking a prescription"></div>
+<div class="reveal"><span class="pill">HOW IT WORKS</span><h2>Order in three simple steps</h2>
+<ol class="steps"><li><b>Find your medicine</b> — search the catalogue or upload a prescription photo.</li>
+<li><b>Confirm on WhatsApp</b> — our pharmacist confirms availability and the total.</li>
+<li><b>Pay at your door</b> — rider delivers across Lahore, cash on delivery.</li></ol>
+<a href="prescription.html" class="btn btn-green">Upload a Prescription &rarr;</a></div>
+</div></section>
+
+<section class="sec"><div class="container">
+<div class="sec-head reveal"><h2>Popular right now</h2><p>Best-selling essentials this week.</p></div>
+<div class="grid" id="homePopular"></div>
+<p style="margin-top:1.4rem"><a href="medicines.html" class="btn btn-outline">See the full catalogue &rarr;</a></p>
+</div></section>
+
+<section class="sec sec-green"><div class="container two">
+<div class="reveal"><h2>Need it today?</h2><p>Order before 6:00 PM for same-day delivery in Gulberg, DHA, Johar Town, Model Town and Bahria Town. Other Lahore areas: next-day delivery.</p><a href="delivery.html" class="btn btn-amber">Delivery Areas &amp; Charges &rarr;</a></div>
+<div class="reveal"><img src="images/delivery.jpg" alt="Delivery rider on a motorcycle in the city"></div>
+</div></section>
+
+<footer class="footer"><div class="container foot-in">
+<div><a href="index.html" class="logo"><span class="logo-mark">&#10010;</span>Sehat<em>Pharm</em><small>PHARMACY &middot; LAHORE</small></a>
+<p>Your neighbourhood pharmacy in Gulberg, Lahore — genuine medicines, honest prices, and fast delivery across the city.</p></div>
+<div><h4>Shop</h4><a href="medicines.html">Medicine Catalogue</a><a href="prescription.html">Upload Prescription</a><a href="delivery.html">Delivery Info</a></div>
+<div><h4>Visit Us</h4><p>Main Boulevard, Gulberg III,<br>Lahore, Pakistan<br>Open 7 days: 9:00 AM &ndash; 11:00 PM</p></div>
+<div><h4>Order</h4><p>Call / WhatsApp:<br><a href="https://wa.me/923001234567">+92 300 1234567</a></p><a href="medicines.html" class="btn btn-amber">Order Medicines</a></div>
+</div><p class="foot-note">&copy; 2026 SehatPharm Pharmacy, Lahore. Medicines are dispensed as per prescription where required. This is a demonstration storefront — orders are confirmed on WhatsApp.</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
